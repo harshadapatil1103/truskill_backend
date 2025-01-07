@@ -1,0 +1,29 @@
+{
+    "collectionName": "faq",
+    "info": {
+      "displayName": "FAQ",
+      "description": "Frequently Asked Questions with images for both question and answer."
+    },
+    "options": {},
+    "attributes": {
+      "question": {
+        "type": "string",
+        "required": true
+      },
+      "question_image": {
+        "type": "media",
+        "multiple": false,
+        "allowedTypes": ["images"]
+      },
+      "answer": {
+        "type": "richtext",
+        "required": true
+      },
+      "answer_image": {
+        "type": "media",
+        "multiple": false,
+        "allowedTypes": ["images"]
+      }
+    }
+  }
+  

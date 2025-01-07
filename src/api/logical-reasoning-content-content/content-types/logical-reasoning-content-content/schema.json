@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "logical_reasoning_content_contents",
+  "info": {
+    "singularName": "logical-reasoning-content-content",
+    "pluralName": "logical-reasoning-content-contents",
+    "displayName": "Logical Reasoning Content_Content",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Explanation",
+        "Formula",
+        "MCQ",
+        "Embedded Video"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "content": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::logical-reasoning-content.logical-reasoning-content"
+    },
+    "explanation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.explanation"
+    },
+    "mcq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.mcq"
+    },
+    "formula": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.formula"
+    },
+    "embedded_video": {
+      "type": "text"
+    },
+    "metaDescription": {
+      "type": "blocks"
+    },
+    "Embeded_video_description": {
+      "type": "text"
+    }
+  }
+}

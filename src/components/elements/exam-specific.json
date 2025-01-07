@@ -1,0 +1,19 @@
+{
+  "collectionName": "exam_specifics",
+  "info": {
+    "displayName": "Exam Specific",
+    "description": ""
+  },
+  "attributes": {
+    "exam_name": {
+      "type": "string",
+      "required": true
+    },
+    "relevance_score": {
+      "type": "float",
+      "min": 0,
+      "max": 10,
+      "required": true
+    }
+  }
+}

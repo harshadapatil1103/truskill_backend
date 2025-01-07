@@ -1,0 +1,69 @@
+{
+    "collectionName": "mcq",
+    "info": {
+      "displayName": "MCQ",
+      "description": "Multiple Choice Questions with images for options, answers, and explanation."
+    },
+    "options": {},
+    "attributes": {
+      "question": {
+        "type": "string",
+        "required": true
+      },
+      "question_image": {
+        "type": "media",
+        "multiple": false,
+        "allowedTypes": ["images"]
+      },
+      "option_a": {
+        "type": "string",
+        "required": true
+      },
+      "option_a_image": {
+        "type": "media",
+        "multiple": false,
+        "allowedTypes": ["images"]
+      },
+      "option_b": {
+        "type": "string",
+        "required": true
+      },
+      "option_b_image": {
+        "type": "media",
+        "multiple": false,
+        "allowedTypes": ["images"]
+      },
+      "option_c": {
+        "type": "string",
+        "required": true
+      },
+      "option_c_image": {
+        "type": "media",
+        "multiple": false,
+        "allowedTypes": ["images"]
+      },
+      "option_d": {
+        "type": "string",
+        "required": true
+      },
+      "option_d_image": {
+        "type": "media",
+        "multiple": false,
+        "allowedTypes": ["images"]
+      },
+      "correct_option": {
+        "type": "enumeration",
+        "enum": ["A", "B", "C", "D"],
+        "required": true
+      },
+      "answer_explanation": {
+        "type": "richtext"
+      },
+      "explanation_image": {
+        "type": "media",
+        "multiple": false,
+        "allowedTypes": ["images"]
+      }
+    }
+  }
+  

@@ -1,0 +1,32 @@
+{
+  "collectionName": "exam_relevance",
+  "info": {
+    "displayName": "Exam Relevance",
+    "description": ""
+  },
+  "attributes": {
+    "about": {
+      "type": "richtext"
+    },
+    "list_of_types": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.relevance-type"
+    },
+    "exam_relevance": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.exam-specific"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.faq"
+    },
+    "PDF": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.pdf"
+    }
+  }
+}

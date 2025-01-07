@@ -1,0 +1,23 @@
+{
+  "collectionName": "formulas",
+  "info": {
+    "displayName": "Formula",
+    "description": ""
+  },
+  "attributes": {
+    "about": {
+      "type": "richtext"
+    },
+    "formula_list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.formula-item"
+    },
+    "video_embed": {
+      "type": "text"
+    },
+    "Embeded_video_description": {
+      "type": "text"
+    }
+  }
+}

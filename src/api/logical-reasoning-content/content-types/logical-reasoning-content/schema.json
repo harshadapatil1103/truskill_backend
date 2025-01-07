@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "logical_reasoning_contents",
+  "info": {
+    "singularName": "logical-reasoning-content",
+    "pluralName": "logical-reasoning-contents",
+    "displayName": "Logical Reasoning Content",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "topic": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::logical-reasoning-topic.logical-reasoning-topic"
+    },
+    "contents_contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::logical-reasoning-content-content.logical-reasoning-content-content"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Overview",
+        "Content",
+        "Formula",
+        "Exam Relevance",
+        "FAQ"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "overview": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.overview"
+    },
+    "formula": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.formula"
+    },
+    "exam_relevance": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.exam-relevance"
+    },
+    "company_specific": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.company-specific"
+    }
+  }
+}

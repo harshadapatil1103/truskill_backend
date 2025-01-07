@@ -1,0 +1,22 @@
+{
+  "collectionName": "aptitude_blocks",
+  "info": {
+    "singularName": "aptitude-block",
+    "pluralName": "aptitude-blocks",
+    "displayName": "Aptitude Block"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "topics": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::topic.topic"
+    }
+  }
+}

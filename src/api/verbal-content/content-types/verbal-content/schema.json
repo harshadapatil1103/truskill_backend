@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "verbal_contents",
+  "info": {
+    "singularName": "verbal-content",
+    "pluralName": "verbal-contents",
+    "displayName": "Verbal Content",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "topic": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::verbal-topic.verbal-topic"
+    },
+    "contents_contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::verbal-content-content.verbal-content-content"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Overview",
+        "Content",
+        "Formula",
+        "Exam Relevance",
+        "FAQ"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "overview": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.overview"
+    },
+    "formula": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.formula"
+    },
+    "exam_relevance": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.exam-relevance"
+    },
+    "company_specific": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.company-specific"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "collectionName": "topic_contents",
+    "info": {
+      "name": "Content of Topic",
+      "icon": "align-left"
+    },
+    "attributes": {
+      "concept": {
+        "type": "string",
+        "required": true
+      },
+      "methodology": {
+        "type": "text"
+      },
+      "formula": {
+        "type": "text"
+      },
+      "trick": {
+        "type": "text"
+      },
+      "sample_question": {
+        "type": "richtext"
+      }
+    }
+  }

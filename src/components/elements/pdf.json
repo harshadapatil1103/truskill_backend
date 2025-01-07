@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_elements_pdfs",
+  "info": {
+    "displayName": "Pdf"
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "text"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Link": {
+      "type": "text"
+    }
+  }
+}

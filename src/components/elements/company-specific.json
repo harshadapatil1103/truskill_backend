@@ -1,0 +1,20 @@
+{
+  "collectionName": "company_specific",
+  "info": {
+    "displayName": "Company Specific",
+    "description": "Contains text specific to companies."
+  },
+  "options": {},
+  "attributes": {
+    "company_specific": {
+      "type": "string"
+    },
+    "Relevance": {
+      "type": "float",
+      "default": 0,
+      "required": true,
+      "max": 10,
+      "min": 0
+    }
+  }
+}

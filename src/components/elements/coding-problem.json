@@ -1,0 +1,21 @@
+{
+    "collectionName": "coding_problem",
+    "info": {
+      "displayName": "Coding Problem",
+      "description": "Contains text, syntax, and an optional embedded video."
+    },
+    "options": {},
+    "attributes": {
+      "problem_text": {
+        "type": "richtext",
+        "required": true
+      },
+      "syntax": {
+        "type": "text"
+      },
+      "embedded_video": {
+        "type": "string"
+      }
+    }
+  }
+  

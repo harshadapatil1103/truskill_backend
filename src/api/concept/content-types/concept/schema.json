@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "concept",
+  "info": {
+    "singularName": "concept",
+    "pluralName": "concepts",
+    "displayName": "Technical Concept",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "concept_name": {
+      "type": "string",
+      "required": true
+    },
+    "banner_ad_1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "banner_ad_2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "page_outline": {
+      "type": "text",
+      "required": true
+    },
+    "theory": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.theory"
+    },
+    "mcq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.mcq"
+    },
+    "company_specific": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.company-specific"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.faq"
+    },
+    "coding_problems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.coding-problem"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "concept_name"
+    },
+    "subject": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subject.subject",
+      "inversedBy": "concepts"
+    }
+  }
+}

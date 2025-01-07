@@ -1,0 +1,15 @@
+{
+    "collectionName": "formula_items",
+    "info": {
+      "displayName": "Formula Item"
+    },
+    "attributes": {
+      "text": {
+        "type": "text"
+      },
+      "image": {
+        "type": "media"
+      }
+    }
+  }
+  

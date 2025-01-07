@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subject",
+  "info": {
+    "singularName": "subject",
+    "pluralName": "subjects",
+    "displayName": "Technical Module",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "technical": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::technical.technical",
+      "inversedBy": "subjects"
+    },
+    "concepts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::concept.concept",
+      "mappedBy": "subject"
+    }
+  }
+}

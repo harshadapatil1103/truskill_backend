@@ -1,0 +1,22 @@
+{
+    "collectionName": "components_elements_price",
+    "info": {
+      "displayName": "price",
+      "description": "Price component for courses."
+    },
+    "options": {},
+    "attributes": {
+      "current": {
+        "type": "float",
+        "required": true
+      },
+      "original": {
+        "type": "float"
+      },
+      "currency": {
+        "type": "string",
+        "default": "₹"
+      }
+    }
+  }
+  

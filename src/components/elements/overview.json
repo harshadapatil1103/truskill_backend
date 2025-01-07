@@ -1,0 +1,18 @@
+{
+    "collectionName": "overviews",
+    "info": {
+      "displayName": "Overview"
+    },
+    "attributes": {
+      "basic_info": {
+        "type": "text"
+      },
+      "about": {
+        "type": "text"
+      },
+      "image": {
+        "type": "media"
+      }
+    }
+  }
+  

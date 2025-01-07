@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "logical_reasoning_blocks",
+  "info": {
+    "singularName": "logical-reasoning-block",
+    "pluralName": "logical-reasoning-blocks",
+    "displayName": "Logical Reasoning Block",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "topics": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::logical-reasoning-topic.logical-reasoning-topic"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "Seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.seo"
+    }
+  }
+}

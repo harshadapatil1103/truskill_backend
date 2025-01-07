@@ -1,0 +1,26 @@
+{
+    "collectionName": "exam_specific_contents",
+    "info": {
+      "name": "Exam Specific Content",
+      "icon": "calculator"
+    },
+    "attributes": {
+      "classification_method": {
+        "type": "text",
+        "required": true
+      },
+      "formula": {
+        "type": "text"
+      },
+      "sample_solved_questions": {
+        "type": "richtext"
+      },
+      "mcq": {
+        "type": "richtext"
+      },
+      "practice_questions": {
+        "type": "richtext"
+      }
+    }
+  }
+  

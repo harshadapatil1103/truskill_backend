@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_elements_seos",
+  "info": {
+    "displayName": "seo",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "metaDescription": {
+      "type": "blocks"
+    }
+  }
+}

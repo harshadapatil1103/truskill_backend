@@ -1,0 +1,15 @@
+{
+    "collectionName": "explanations",
+    "info": {
+      "displayName": "Explanation"
+    },
+    "attributes": {
+      "text": {
+        "type": "text"
+      },
+      "image": {
+        "type": "media"
+      }
+    }
+  }
+  

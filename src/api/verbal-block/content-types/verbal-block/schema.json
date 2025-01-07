@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "verbal_blocks",
+  "info": {
+    "singularName": "verbal-block",
+    "pluralName": "verbal-blocks",
+    "displayName": "Verbal Block",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::verbal-topic.verbal-topic"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "Seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.seo"
+    }
+  }
+}

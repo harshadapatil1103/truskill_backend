@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "verbal_topics",
+  "info": {
+    "singularName": "verbal-topic",
+    "pluralName": "verbal-topics",
+    "displayName": "Verbal Topic"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "block": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::verbal-block.verbal-block"
+    },
+    "contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::verbal-content.verbal-content"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

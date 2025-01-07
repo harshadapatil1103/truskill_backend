@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_pages",
+  "info": {
+    "singularName": "course-page",
+    "pluralName": "course-pages",
+    "displayName": "Course Page",
+    "description": "Collection for managing course pages."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "rating": {
+      "type": "float"
+    },
+    "reviews": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.price"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "level": {
+      "type": "string"
+    },
+    "students_enrolled": {
+      "type": "biginteger"
+    },
+    "language": {
+      "type": "string"
+    },
+    "subtitle_language": {
+      "type": "string"
+    },
+    "features": {
+      "type": "json"
+    },
+    "share_links": {
+      "type": "json"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "image": {
+      "type": "media",
+      "allowedTypes": ["images"]
+    },
+    "video_preview": {
+      "type": "media",
+      "allowedTypes": ["videos"]
+    }
+  }
+}

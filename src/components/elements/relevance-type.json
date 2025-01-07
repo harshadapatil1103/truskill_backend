@@ -1,0 +1,22 @@
+{
+  "collectionName": "relevance_types",
+  "info": {
+    "displayName": "Relevance Type",
+    "description": ""
+  },
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false
+    },
+    "importance_bar": {
+      "type": "float",
+      "min": 0,
+      "max": 10
+    }
+  }
+}

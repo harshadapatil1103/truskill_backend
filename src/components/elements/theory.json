@@ -1,0 +1,26 @@
+{
+    "collectionName": "theory",
+    "info": {
+      "displayName": "Theory",
+      "description": "Contains text, syntax, image, and video for a concept."
+    },
+    "options": {},
+    "attributes": {
+      "text": {
+        "type": "richtext",
+        "required": true
+      },
+      "syntax": {
+        "type": "text"
+      },
+      "image": {
+        "type": "media",
+        "multiple": false,
+        "allowedTypes": ["images"]
+      },
+      "video": {
+        "type": "string"
+      }
+    }
+  }
+  
