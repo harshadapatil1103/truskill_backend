@@ -2,7 +2,7 @@ module.exports = {
     settings: {
       cors: {
         enabled: true,
-        origin: ['http://localhost:3000'], // React app's URL
+        origin: ['http://https://truskill-front-end.vercel.app/'], // React app's URL
       },
     },
   };
